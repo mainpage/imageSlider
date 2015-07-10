@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>图片轮播</title>
+	<style type="text/css">
+	body,ul,li,h1,h2,h3,p{ margin: 0px; padding: 0px;}
+	ul{ list-style: none;}
+	a{ text-decoration: none;}
+
+	.view-wrapper{ position: relative; width:30%; margin: 20px auto; border: 1px solid black; overflow: hidden;}
+	.view{ position: relative; font-size: 0px;}
+	.view-item{ display: inline-block;}
+	.view-item img{ width: 100%;}
+	.view-footer{ position: absolute; bottom: 0px; left: 0px; width: 100%; height: 30px; background: rgba(0,0,0,0.7); }
+	.view-nav{ position: absolute; bottom: 0px; right: 0px;  height: 30px; line-height: 30px;}
+	.view-nav-item{ display: inline-block; width: 20px; height: 20px; background: url(image/icons.png) 0 -509px no-repeat; vertical-align: middle; cursor: pointer;}
+	.view-nav-item:hover{ background-position: 0 -467px;}
+	.view-nav .active{ background-position: 0 -423px;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="view-wrapper">
+			<ul class="view">
+				<li class="view-item"><img src="image/1.jpg"></li>
+				<li class="view-item"><img src="image/2.jpg"></li>
+				<li class="view-item"><img src="image/3.jpg"></li>
+				<li class="view-item"><img src="image/4.jpg"></li>
+			</ul>
+			<div class="view-footer">
+				<div class="view-nav">
+					<li class="view-nav-item active"></li>
+					<li class="view-nav-item"></li>
+					<li class="view-nav-item"></li>
+					<li class="view-nav-item"></li>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+</body>
+</html>
